@@ -1,0 +1,48 @@
+mixin displayNavTabs(activeTabId)
+  ul.nav.nav-tabs
+    - var tabs = ['Home', 'Projects', 'News', 'Blog', 'Gallery', 'Contact'];
+    - var hrefs = ['/', '/projects', '/news', '/blog', '/gallery', '/contact'];
+    - for (var i = 0; i < tabs.length; ++i) {
+      - if (i == activeTabId) {
+        li.active
+          a(href='#{hrefs[i]}') #{tabs[i]}
+      - }
+      - else {
+        li
+          a(href='#{hrefs[i]}') #{tabs[i]}
+      - }
+    - }
+
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.container
+      div.row
+        div.span1
+        div.span10
+          div.page-header
+            h1
+              | Jeff Jia 
+              small
+                | A passionate generalist
+      div.row
+        div.span1
+        div.span10
+          div.tabbable.tabs-right
+            mixin displayNavTabs(activeTabId)
+            div.tab-content
+              block content
+        div.span1
+    div.container
+      div.row
+        div.span1
+        div.span10
+          div.footer
+            p.text-left Copyright 2013. Jeff Jia / jeffjia.com
+        div.span1
+
