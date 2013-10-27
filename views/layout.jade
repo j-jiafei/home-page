@@ -1,7 +1,7 @@
 mixin displayNavTabs(activeTabId)
   ul.nav.nav-tabs
     - var tabs = ['Home', 'Projects', 'News', 'Blog', 'Gallery', 'Contact'];
-    - var hrefs = ['/', '/projects', '/news', '/blog', '/gallery', '/contact'];
+    - var hrefs = ['/', '/projects', '/news', 'http://blog.jeffjia.com/', 'http://gallery.jeffjia.com/', '/contact'];
     - for (var i = 0; i < tabs.length; ++i) {
       - if (i == activeTabId) {
         li.active
