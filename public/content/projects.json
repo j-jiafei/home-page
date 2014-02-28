@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Commercial Projects",
+    "projects": [
+      {
+        "title": "Cloud Operational Data Analytics",
+        "startdate": "2013-06",
+        "enddate": "",
+        "team": "Cloud and Datacenter Management",
+        "company": "Microsoft",
+        "description": "Conducting data analytics (with data visualization, machine learning) on cloud operational data to improve the reliability of cloud systems"
+      }
+    ]
+  },
+  {
+    "title": "Open-Source Projects",
+    "projects": [
+    ]
+  },
+  {
+    "title": "Research Projects",
+    "projects": [
+    ]
+  }
+]

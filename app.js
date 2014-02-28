@@ -4,7 +4,6 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
   , http = require('http')
   , path = require('path');
 
@@ -19,20 +18,18 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
-  app.use(require('stylus').middleware(__dirname + '/public'));
+app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
+  console.log('DO NOT USE DEVELOPMENT ENVIRONMENT');
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/projects', routes.projects);
-app.get('/news', routes.news);
-app.get('/blog', routes.blog);
-app.get('/gallery', routes.gallery);
-app.get('/contact', routes.contact);
+app.get('/', function (req, res) {
+  res.render('index');
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

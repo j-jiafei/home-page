@@ -1,30 +1,82 @@
-extends layout
+doctype html
+html
+  head
+    title Jeff Jia - a Passionate Generalist
 
-block content
-  p.lead
-    | Hi,
-  p.
-    I work for a variety of open-source and research projects. With each
-    project, I aim to maintain a balance between functionality and simplicity,
-    and I enjoy the job of doing it. By the time, I also try to explore the
-    opportunity to work on social app and cloud infrastructure.
-  p.
-    Feel free to have a look at my work and contact me if you think my expertise,
-    experience or passion may help you.
-  p.
-    Thanks for stopping by!
+  body
+    nav
+      ul
+        li
+          a(href='#') Intro
+        li
+          a(href='#') News
+        li
+          a(href='#') Projects
+        li
+          a(href='#') Contact
 
-  br
-  br
+    header
+      h1 Jeff Jia
+      h2 A passionate generalist
 
-  ul.inline
-    li
-      a(href='https://github.com/jeffjia') GitHub
-    li
-      a(href='https://www.linkedin.com/pub/jeff-jia/26/830/890/') LinkedIn
-    li
-      a(href='https://twitter.com/JeffreyFJ') Twitter
-    li
-      a(href='https://medium.com/@JeffreyFJ') Medium
-    li
-      a(href='http://www.flickr.com/photos/85974678@N07/') Flickr
+    div.intro
+      h3 Introduction
+      p.
+        I work for a variety of commercial, open-source and research projects.
+        With each project, I aim to maintain a balance between functionality,
+        elegance and simplicity, and I enjoy the job of doing it. By the time,
+        I am exploring the opportunity to work on real-time analytics,
+        compiler, and cloud infrastructure.
+      p.
+        Feel free to have a look at my work and contact me if you think my
+        expertise, experience or passion may help you.
+      p.
+        Thanks for stopping by!
+
+    div.news
+      h3 News
+      ol#newslist
+
+    div.proj
+      h3 Projects
+      #projects
+
+    div.contact
+      h3 Contact
+      address
+        strong Computer Science & Enginnering
+        br
+        strong University of California, San Diego
+        br
+        | 9500 Gilman Dr
+        br
+        | San Diego, CA 92093
+      address
+        strong Jeff Jia
+        br
+        | Email: jeff jia @ outlook
+        br
+        | Gtalk: j.jiafei
+
+    div.links
+      h3 Links
+      ul
+        li
+          a(href='https://github.com/jeffjia') GitHub
+        li
+          a(href='https://www.linkedin.com/pub/jeff-jia/26/830/890/') LinkedIn
+        li
+          a(href='https://twitter.com/JeffreyFJ') Twitter
+        li
+          a(href='https://medium.com/@JeffreyFJ') Medium
+        li
+          a(href='http://www.flickr.com/photos/85974678@N07/') Flickr
+
+    footer
+      p.text-left Copyright 2013. Jeff Jia / jeffjia.com
+
+    //- link(rel='stylesheet', href='/css/style.css')
+    block stylesheets
+    script(src='http://d3js.org/d3.v3.min.js', charset='utf-8')
+    script(src='/js/loaddata.js', charset='utf-8')
+    block javascripts
