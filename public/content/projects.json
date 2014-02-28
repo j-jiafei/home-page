@@ -8,18 +8,53 @@
         "enddate": "",
         "team": "Cloud and Datacenter Management",
         "company": "Microsoft",
-        "description": "Conducting data analytics (with data visualization, machine learning) on cloud operational data to improve the reliability of cloud systems"
+        "description": ["Conducting data analytics (with data visualization, machine learning) on cloud operational data to improve the reliability of cloud systems."]
       }
     ]
   },
   {
     "title": "Open-Source Projects",
     "projects": [
+      {
+        "title": "Todoq",
+        "description": ["The simplest command-line todo list to help with better focus at work."]
+      },
+      {
+        "title": "Send2Cloud",
+        "description": ["A bookmarklet to send documents to Dropbox."]
+      }
     ]
   },
   {
     "title": "Research Projects",
     "projects": [
+      {
+        "title": "GreenDroid",
+        "startdate": "2011-10",
+        "enddate": "2013-06",
+        "team": "GreenDroid",
+        "company": "UCSD",
+        "description": ["I designed and developed the second-version hardware compiler tool chain to produce C-cores (conservation cores) from arbitrary C or C++ functions with LLVM for the GreenDroid architecture."]
+      },
+      {
+        "title": "Stack Miner",
+        "startdate": "2011-02",
+        "enddate": "2011-06",
+        "team": "Software Analytics Group",
+        "company": "MSRA",
+        "description": [
+          "Stack miner is a software analysis tool locating the root cause of software performance bugs with data mining algorithms.",
+          "I proposed a new association mining rule “maximal contrast pattern pair mining in single database”, and a parallel algorithm to mine the patterns efficiently."
+        ]
+      },
+      {
+        "title": "Usage Log Analysis",
+        "startdate": "2010-07",
+        "enddate": "2011-02",
+        "team": "Software Analytics Group",
+        "company": "MSRA",
+        "description": ["We introduced the contrast sequence mining to usage log analysis, and conducted the analysis of user behavior change over time and search engine dimension."]
+      }
     ]
   }
 ]
