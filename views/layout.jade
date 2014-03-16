@@ -45,4 +45,13 @@ html
           div.footer
             p.text-left Copyright 2013. Jeff Jia / jeffjia.com
         div.span1
-
+    script.
+      var _prum = [['id', '5325173aabe53d716d31bee7'],
+                   ['mark', 'firstbyte', (new Date()).getTime()]];
+      (function() {
+          var s = document.getElementsByTagName('script')[0]
+            , p = document.createElement('script');
+          p.async = 'async';
+          p.src = '//rum-static.pingdom.net/prum.min.js';
+          s.parentNode.insertBefore(p, s);
+      })();
